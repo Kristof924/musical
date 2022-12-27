@@ -134,12 +134,12 @@ public class ChatRoom extends javax.swing.JFrame {
             con = DriverManager.getConnection("jdbc:mysql://localhost/chat", "root", "");
 
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Menu.class
-                    .getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+            System.exit(0);
 
         } catch (SQLException ex) {
-            Logger.getLogger(Menu.class
-                    .getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+            System.exit(0);
         }
     }
 
